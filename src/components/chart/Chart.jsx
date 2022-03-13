@@ -1,9 +1,8 @@
-import './chart.scss'
+import "./chart.scss";
 import {
   AreaChart,
   Area,
   XAxis,
-  YAxis,
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
@@ -33,8 +32,8 @@ const Chart = () => {
               <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
             </linearGradient>
           </defs>
-          <XAxis dataKey="name" stroke='gray' />
-          <CartesianGrid strokeDasharray="3 3" className='chartGrid' />
+          <XAxis dataKey="name" stroke="gray" />
+          <CartesianGrid strokeDasharray="3 3" className="chartGrid" />
           <Tooltip />
           <Area
             type="monotone"
@@ -49,4 +48,4 @@ const Chart = () => {
   );
 };
 
-export default Chart
+export default Chart;
