@@ -24,6 +24,12 @@ const actionColumn = [
 const Datatable = () => {
   return (
     <div className="datatable">
+      <div className="datatableTitle">
+        Add new User
+        <Link className="link" to="/users/new">
+          Add New
+        </Link>
+      </div>
       <DataGrid
         rows={userRows}
         columns={userColumns.concat(actionColumn)}
